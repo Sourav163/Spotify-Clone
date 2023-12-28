@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: green;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    background-color: black;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 5px 20px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li img {
+    height: 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(180, 180, 180);
+    transform: scale(1.1);
+}
+
+.spotify {
+    padding: 0;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.spotify:hover {
+    color: rgb(30, 215, 96);
+}
+
+section {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 1000px;
+    position: relative;
+    padding: 50px;
+    border-radius: 30px;
+    transition: 0.2s ease;
+}
+
+.section:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+}
+
+.section::before {
+    content: "";
+    background: url("bg.jpg");
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.section h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+    user-select: none;
+}
+
+.section h3 {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    margin: 10px 0;
+    padding: 15px 0;
+    width: 600px;
+    font-family: 'Josefin Slab', serif;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    transition: 0.1s ease;
+}
+
+.section h3:hover {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    transform: scale(1.01);
+}
+
+.section h3 img {
+    height: 40px;
+    position: absolute;
+    left: 25px;
+    bottom: 4px;
+    border-radius: 50%;
+}
+
+.time {
+    position: absolute;
+    right: 50px;
+}
+
+.logo {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    bottom: 0px;
+}
+
+footer input {
+    cursor: pointer;
+    width: 80%;
+}
+
+.control {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playingLogo {
+    position: absolute;
+    left: 10.3%;
+    font-size: 25px;
+    user-select: none;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+#playingLogo img {
+    height: 30px;
+}
+
+.symbol {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 17px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.1s ease;
+}
+
+.symbol:hover {
+    transform: scale(1.1);
+}
+
+.symbol i {
+    font-size: 50px;
+}
+
+.symbol0 {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 17px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.symbol0:hover {
+    transform: scale(1.1);
+}
+
+.symbol0 i {
+    font-size: 40px;
+}
+
+#showDuration {
+    position: absolute;
+    right: 10.3%;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.section2 {
+    border-radius: 30px;
+    width: 1000px;
+    position: relative;
+    padding: 50px;
+    line-height: 20px;
+    transition: 0.2s ease;
+}
+
+.section2:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+}
+
+.section2::before {
+    content: "";
+    background: black;
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.section2 h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* @media only screen and (max-width : 340px) {
+    .section h3 {
+        width: 280px;
+    }
+} */
+
+@media only screen and (max-width : 440px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spotify {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+
+    .section {
+        width: 320px;
+        padding: 50px 5px;
+    }
+
+    .time,
+    .logo {
+        bottom: 0;
+    }
+
+    .songs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section h3 {
+        margin: 10px 0;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        /* width: 320px; */
+        width: 280px;
+    }
+
+    .section h3 img {
+        left: 10px;
+    }
+
+    #playingLogo {
+        bottom: 10.3%;
+    }
+
+    #showDuration {
+        bottom: 34.3%;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width : 440px) and (max-width : 697px) {
+    .section {
+        width: 420px;
+        padding: 50px 5px;
+    }
+
+    .section h3 {
+        margin: 10px 0;
+        padding: 15px 0;
+        width: 420px;
+    }
+
+    #playingLogo {
+        bottom: 10.3%;
+    }
+
+    #showDuration {
+        bottom: 34.3%;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width : 697px) and (max-width : 1075px) {
+    .section {
+        margin: 0 20px;
+    }
+
+    #playingSongName {
+        position: absolute;
+        width: 147px;
+        left: 0;
+        top: 85%;
+    }
+
+    footer {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width : 1075px) and (max-width : 1325px) {
+    .section {
+        margin: 0 20px;
+    }
+
+    #playingSongName {
+        position: absolute;
+        width: 385px;
+        left: 0;
+        top: 85%;
+    }
+}
