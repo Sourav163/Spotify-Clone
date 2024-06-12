@@ -1,0 +1,51 @@
+.border {
+    border: 2px solid red;
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nodec {
+    text-decoration: none;
+}
+
+.text-grey {
+    color: #b3b3b3;
+}
+
+.svg-grey {
+    filter: invert(0.7);
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.svg-white {
+    filter: invert(1);
+}
+
+.trans-02 {
+    transition: 0.2s ease-out;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="tab bg-grey">
+                <div class="logo nodec flex align-center">
+                    <a><img src="svg/spotify.svg" alt="spotify" class="spotifysvg svg-white trans-02"></a>
+                    <i id="cross" class="fa-solid fa-xmark fa-xl text-white"></i>
+                </div>
+                <a class="home flex align-center nodec text-white">
+                    <img src="svg/home.svg" alt="home" class="homesvg svg-white">
+                    <h3 class="homeHead">Home</h3>
+                </a>
+                <a class="search flex align-center nodec text-grey trans-02">
+                    <img src="svg/search.svg" alt="search" class="searchsvg svg-grey trans-02">
+                    <h3 class="searchHead">Search</h3>
+                </a>
+            </div>
+            <div class="lib">
+                <a class="flex align-center bg-grey text-grey nodec trans-02">
+                    <img src="svg/library.svg" alt="library" class="librarysvg svg-grey">
+                    <h3>Your Library</h3>
+                </a>
+
+                <div class="songFooterContainer bg-grey">
+                    <div class="songsContainer">
+                        <ul id="songsContainerID"></ul>
+                    </div>
+
+                    <footer class="leftFooter">
+                        <a class="nodec text-grey trans-02 leftFooterLinks"
+                            href="https://www.spotify.com/in-en/legal/">Legal</a>
+                        <a class="nodec text-grey trans-02 leftFooterLinks"
+                            href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                        <a class="nodec text-grey trans-02 leftFooterLinks"
+                            href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                        <a class="nodec text-grey trans-02 leftFooterLinks"
+                            href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                        <a class="nodec text-grey trans-02 leftFooterLinks"
+                            href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                        <a class="nodec text-grey trans-02 leftFooterLinks"
+                            href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                        <a class="nodec text-grey trans-02 leftFooterLinks"
+                            href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                            rel="noopener">Cookies</a>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="right bg-grey">
+            <nav class="navbar">
+                <ul class="navbarItems flex align-center">
+                    <li class="navbarItems1">
+                        <i id="bar" class="fa-solid fa-bars fa-xl"></i>
+                    </li>
+                    <li class="navbarItems2 flex align-center">
+                        <a class="text-grey trans-02 nodec navbarlink" id="signup">Sign Up</a>
+                        <a class="text-black trans-02 nodec navbarlink" id="login">Log in</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="notnav">
+                <div class="nodec text-white notnavHeaderLink flex align-center">
+                    <a class="notnavHead nodec text-white">Spotify Playlists</a>
+                    <a class="notnavShowAll nodec text-grey">Show all</a>
+                </div>
+                <div class="cardsContainer flex"></div>
+                <div id="playBarID" class="playBar flex justify-center align-center">
+                    <div class="playButtons">
+                        <h3 id="playingSongName">Electro-Light - Symbolism [NCS Release].mp3</h3>
+                        <div class="playingSongNameDurationContainer">
+                            <div>
+                                <i id="prev" class="fa-solid fa-backward-step fa-xl playBtn"></i>
+                                <i id="play" class="fa-solid fa-circle-play fa-2xl playBtn"></i>
+                                <i id="pause" class="fa-solid fa-circle-pause fa-2xl playBtn"></i>
+                                <i id="next" class="fa-solid fa-forward-step fa-xl playBtn"></i>
+                            </div>
+                            <h3 id="playingSongDuration"></h3>
+                        </div>
+                    </div>
+                    <div class="volumeSeek flex align-center">
+                        <div class="volumeControl flex align-center">
+                            <i id="muteVolume" class="fa-solid fa-volume-xmark volumeBtns"></i>
+                            <i id="noVolume" class="fa-solid fa-volume-off volumeBtns"></i>
+                            <i id="lowVolume" class="fa-solid fa-volume-low volumeBtns"></i>
+                            <i id="highVolume" class="fa-solid fa-volume-high volumeBtns"></i>
+                            <input type="range" name="" id="songVolume" value="5">
+                        </div>
+                        <div id="seekBarContainerID" class="seekBarContainer">
+                            <div class="seekBar">
+                                <div id="seekBarFill"></div>
+                                <div id="seekCircle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/11f93c8790.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
